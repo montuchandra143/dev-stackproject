@@ -24,7 +24,7 @@ const Tecnologies = () => {
     const handleRemoveAll = () => {
         setSelectedStack([]);
     };
-
+    
     return (
         <section className="min-h-screen bg-[#fcfcfd] px-6 py-16 lg:px-16">
             <div className="container mx-auto max-w-7xl">

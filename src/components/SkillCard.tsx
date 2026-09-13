@@ -15,13 +15,9 @@ const SkillCard = ({ skill, selectedStack, setSelectedStack }: ITechCardProps) =
             setSelectedStack((prev) => [...prev, skill]);
         }
     };
-
     return (
-        <div
-            className={`flex flex-col justify-between rounded-[16px] bg-white p-5 transition-all duration-300 ${
-                isSelected
-                    ? "border-2 border-[#111827] shadow-md"
-                    : "border border-white shadow-sm hover:shadow-md"
+        <div className={`flex flex-col justify-between rounded-[16px] bg-white p-5 transition-all duration-300 ${
+                isSelected? "border-2 border-[#111827] shadow-md"  : "border border-white shadow-sm hover:shadow-md"
             }`}
         >
             <div>
@@ -50,11 +46,7 @@ const SkillCard = ({ skill, selectedStack, setSelectedStack }: ITechCardProps) =
                 <button
                     onClick={handleAddToStack}
                     disabled={isSelected}
-                    className={`mt-4 w-full rounded-lg px-4 py-2 text-[14px] font-medium transition-colors cursor-pointer ${
-                        isSelected
-                            ? "bg-[#f1f5f9] text-[#94a3b8] cursor-not-allowed"
-                            : "bg-gray-800 text-white hover:bg-black"
-                    }`}
+                    className={`mt-4 w-full rounded-lg px-4 py-2 text-[14px] font-medium transition-colors cursor-pointer ${ isSelected ? "bg-[#f1f5f9] text-[#94a3b8] cursor-not-allowed": "bg-gray-800 text-white hover:bg-black" }`}
                 >
                     {isSelected ? "Added to Stack" : "Add to Stack"}
                 </button>
