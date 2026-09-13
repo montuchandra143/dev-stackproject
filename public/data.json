@@ -1,0 +1,322 @@
+[
+  {
+    "name": "Python",
+    "category": "Programming",
+    "badge": "Popular",
+    "badgeColor": "bg-yellow-50 text-yellow-700",
+    "description": "A versatile programming language widely used for software development, automation, backend systems, data processing, and scripting.",
+    "level": "Beginner-Friendly",
+    "rating": "4.9",
+    "icon": "🐍"
+  },
+  {
+    "name": "Java",
+    "category": "Programming",
+    "badge": "Enterprise",
+    "badgeColor": "bg-red-50 text-red-600",
+    "description": "A robust object-oriented programming language widely used for enterprise applications, backend systems, and large-scale software.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "☕"
+  },
+  {
+    "name": "C++",
+    "category": "Programming",
+    "badge": "Performance",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A high-performance programming language used for system software, game development, embedded systems, and performance-critical applications.",
+    "level": "Advanced",
+    "rating": "4.8",
+    "icon": "⚙️"
+  },
+  {
+    "name": "C#",
+    "category": "Programming",
+    "badge": "Microsoft",
+    "badgeColor": "bg-purple-50 text-purple-600",
+    "description": "A modern object-oriented language used to build desktop applications, web services, enterprise software, and games.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "💜"
+  },
+  {
+    "name": "Go",
+    "category": "Programming",
+    "badge": "Scalable",
+    "badgeColor": "bg-cyan-50 text-cyan-600",
+    "description": "A fast and efficient programming language designed for scalable backend services, cloud applications, and distributed systems.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🔵"
+  },
+  {
+    "name": "Node.js",
+    "category": "Backend",
+    "badge": "Popular",
+    "badgeColor": "bg-green-50 text-green-600",
+    "description": "A JavaScript runtime used to build scalable backend services, APIs, real-time applications, and server-side systems.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🟢"
+  },
+  {
+    "name": "Express.js",
+    "category": "Backend",
+    "badge": "Lightweight",
+    "badgeColor": "bg-gray-50 text-gray-700",
+    "description": "A lightweight Node.js framework for building REST APIs, backend services, middleware systems, and web applications.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🚂"
+  },
+  {
+    "name": "Spring Boot",
+    "category": "Backend",
+    "badge": "Enterprise",
+    "badgeColor": "bg-emerald-50 text-emerald-600",
+    "description": "A Java-based framework for creating production-ready enterprise applications, REST APIs, and scalable backend systems.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🌱"
+  },
+  {
+    "name": "Django",
+    "category": "Backend",
+    "badge": "Python",
+    "badgeColor": "bg-green-50 text-green-700",
+    "description": "A high-level Python web framework designed for secure, maintainable, and scalable web applications.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🎸"
+  },
+  {
+    "name": "REST API",
+    "category": "Backend",
+    "badge": "Essential",
+    "badgeColor": "bg-sky-50 text-sky-600",
+    "description": "A standard architectural approach for designing web APIs that allow applications and services to communicate over HTTP.",
+    "level": "Beginner-Friendly",
+    "rating": "4.9",
+    "icon": "🔗"
+  },
+  {
+    "name": "PostgreSQL",
+    "category": "Database",
+    "badge": "SQL",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A powerful open-source relational database system designed for reliability, scalability, and complex data operations.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🐘"
+  },
+  {
+    "name": "MySQL",
+    "category": "Database",
+    "badge": "Popular",
+    "badgeColor": "bg-orange-50 text-orange-600",
+    "description": "A widely used relational database management system for storing, managing, and querying structured application data.",
+    "level": "Beginner-Friendly",
+    "rating": "4.8",
+    "icon": "🐬"
+  },
+  {
+    "name": "MongoDB",
+    "category": "Database",
+    "badge": "NoSQL",
+    "badgeColor": "bg-green-50 text-green-600",
+    "description": "A document-oriented NoSQL database designed for flexible data models, scalable applications, and modern backend systems.",
+    "level": "Intermediate",
+    "rating": "4.7",
+    "icon": "🍃"
+  },
+  {
+    "name": "Redis",
+    "category": "Database",
+    "badge": "Caching",
+    "badgeColor": "bg-red-50 text-red-600",
+    "description": "An in-memory data store commonly used for caching, sessions, queues, real-time applications, and high-performance systems.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🔴"
+  },
+  {
+    "name": "Git",
+    "category": "Version Control",
+    "badge": "Essential",
+    "badgeColor": "bg-orange-50 text-orange-600",
+    "description": "A distributed version control system used to track code changes, manage branches, and collaborate on software projects.",
+    "level": "Beginner-Friendly",
+    "rating": "4.9",
+    "icon": "🔀"
+  },
+  {
+    "name": "GitHub",
+    "category": "Version Control",
+    "badge": "Essential",
+    "badgeColor": "bg-slate-50 text-slate-700",
+    "description": "A development platform for hosting repositories, collaborating on code, reviewing changes, and managing software projects.",
+    "level": "Beginner-Friendly",
+    "rating": "4.9",
+    "icon": "🐙"
+  },
+  {
+    "name": "Docker",
+    "category": "DevOps",
+    "badge": "Container",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A containerization platform that packages applications and their dependencies into portable and consistent environments.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🐳"
+  },
+  {
+    "name": "Kubernetes",
+    "category": "DevOps",
+    "badge": "Orchestration",
+    "badgeColor": "bg-indigo-50 text-indigo-600",
+    "description": "An open-source container orchestration platform for deploying, scaling, and managing containerized applications.",
+    "level": "Advanced",
+    "rating": "4.8",
+    "icon": "☸️"
+  },
+  {
+    "name": "Jenkins",
+    "category": "CI/CD",
+    "badge": "Automation",
+    "badgeColor": "bg-red-50 text-red-600",
+    "description": "An automation server used to build, test, and continuously deliver software through automated development pipelines.",
+    "level": "Intermediate",
+    "rating": "4.7",
+    "icon": "🔨"
+  },
+  {
+    "name": "GitHub Actions",
+    "category": "CI/CD",
+    "badge": "Automation",
+    "badgeColor": "bg-gray-50 text-gray-700",
+    "description": "A CI/CD automation platform for building, testing, deploying, and automating software development workflows directly from repositories.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "⚡"
+  },
+  {
+    "name": "AWS",
+    "category": "Cloud",
+    "badge": "Industry",
+    "badgeColor": "bg-orange-50 text-orange-600",
+    "description": "A comprehensive cloud platform providing computing, storage, databases, networking, security, and deployment services.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "☁️"
+  },
+  {
+    "name": "Microsoft Azure",
+    "category": "Cloud",
+    "badge": "Enterprise",
+    "badgeColor": "bg-blue-50 text-blue-600",
+    "description": "A cloud computing platform offering infrastructure, application hosting, databases, AI services, networking, and enterprise solutions.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🔷"
+  },
+  {
+    "name": "Linux",
+    "category": "Operating System",
+    "badge": "Essential",
+    "badgeColor": "bg-yellow-50 text-yellow-700",
+    "description": "An open-source operating system widely used for servers, cloud infrastructure, development environments, and system administration.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🐧"
+  },
+  {
+    "name": "Unit Testing",
+    "category": "Testing",
+    "badge": "Quality",
+    "badgeColor": "bg-emerald-50 text-emerald-600",
+    "description": "A software testing practice focused on verifying individual functions, methods, or components to ensure reliable application behavior.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🧪"
+  },
+  {
+    "name": "Jest",
+    "category": "Testing",
+    "badge": "JavaScript",
+    "badgeColor": "bg-red-50 text-red-600",
+    "description": "A JavaScript testing framework designed for testing applications, components, functions, and backend logic.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🃏"
+  },
+  {
+    "name": "Selenium",
+    "category": "Testing",
+    "badge": "Automation",
+    "badgeColor": "bg-green-50 text-green-600",
+    "description": "A browser automation framework used for testing web applications across different browsers and environments.",
+    "level": "Intermediate",
+    "rating": "4.7",
+    "icon": "🧪"
+  },
+  {
+    "name": "Postman",
+    "category": "API Tools",
+    "badge": "Essential",
+    "badgeColor": "bg-orange-50 text-orange-600",
+    "description": "A popular API development and testing platform used to build, test, document, and debug web APIs.",
+    "level": "Beginner-Friendly",
+    "rating": "4.9",
+    "icon": "📮"
+  },
+  {
+    "name": "Swagger",
+    "category": "API Tools",
+    "badge": "Documentation",
+    "badgeColor": "bg-green-50 text-green-600",
+    "description": "A collection of tools for designing, documenting, testing, and maintaining RESTful APIs using the OpenAPI specification.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "📘"
+  },
+  {
+    "name": "UML",
+    "category": "Software Design",
+    "badge": "Architecture",
+    "badgeColor": "bg-purple-50 text-purple-600",
+    "description": "A standardized modeling language used to visualize, design, and document software systems and their architecture.",
+    "level": "Intermediate",
+    "rating": "4.7",
+    "icon": "📐"
+  },
+  {
+    "name": "System Design",
+    "category": "Software Architecture",
+    "badge": "Advanced",
+    "badgeColor": "bg-indigo-50 text-indigo-600",
+    "description": "The practice of designing scalable, reliable, maintainable, and high-performance software systems and architectures.",
+    "level": "Advanced",
+    "rating": "4.9",
+    "icon": "🏗️"
+  },
+  {
+    "name": "Design Patterns",
+    "category": "Software Architecture",
+    "badge": "Best Practice",
+    "badgeColor": "bg-violet-50 text-violet-600",
+    "description": "Reusable software design solutions that help developers create flexible, maintainable, and scalable application architectures.",
+    "level": "Intermediate",
+    "rating": "4.8",
+    "icon": "🧩"
+  },
+  {
+    "name": "Data Structures & Algorithms",
+    "category": "Computer Science",
+    "badge": "Core",
+    "badgeColor": "bg-rose-50 text-rose-600",
+    "description": "Fundamental computer science concepts used to solve problems efficiently and build optimized software systems.",
+    "level": "Intermediate",
+    "rating": "4.9",
+    "icon": "🧠"
+  }
+]
