@@ -16,7 +16,7 @@ const Tecnologies = () => {
     }, []);
 
     return (
-        <div>
+        <section className="min-h-screen bg-[#fcfcfd] px-6 py-16 lg:px-16">
             <div className="container mx-auto max-w-7xl">
                 <div className="mb-12">
                     <h2 className="text-[36px] sm:text-[44px] font-extrabold text-[#111827]">
@@ -30,13 +30,13 @@ const Tecnologies = () => {
                     </p>
                 </div>
 
-                <div>
+                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     {allTechnologies.map((skill) => (
-                        <SkillCard key={skill.name} skill={skill}/>
+                        <SkillCard key={skill.name} skill={skill} />
                     ))}
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
