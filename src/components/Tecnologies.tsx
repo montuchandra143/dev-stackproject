@@ -11,17 +11,26 @@ const TechnologiesTec = async (): Promise<ITechnology[]> => {
 
 const Tecnologies = () => {
     const [allTechnologies, setAllTechnologies] = useState<ITechnology[]>([]);
+    const [selectedStack, setSelectedStack] = useState<ITechnology[]>([]);
 
     useEffect(() => {
         TechnologiesTec().then((data) => setAllTechnologies(data));
     }, []);
+
+    const handleRemoveItem = (name: string) => {
+        setSelectedStack(selectedStack.filter((item) => item.name !== name));
+    };
+
+    const handleRemoveAll = () => {
+        setSelectedStack([]);
+    };
 
     return (
         <section className="min-h-screen bg-[#fcfcfd] px-6 py-16 lg:px-16">
             <div className="container mx-auto max-w-7xl">
                 <div className="mb-12">
                     <h2 className="text-[36px] sm:text-[44px] font-extrabold text-[#111827]">
-                        Explore the{" "}
+                        Explore the 
                         <span className="bg-gradient-to-r from-[#ff4d2e] via-[#e91e63] to-[#8b3df5] bg-clip-text text-transparent">
                             Technologies
                         </span>
@@ -34,13 +43,16 @@ const Tecnologies = () => {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
                         {allTechnologies.map((skill) => (
-                            <SkillCard key={skill.name} skill={skill} />
+                            <SkillCard 
+                                key={skill.name}  skill={skill}   selectedStack={selectedStack} setSelectedStack={setSelectedStack}
+                            />
                         ))}
                     </div>
 
                     <div className="lg:col-span-1">
-                        <div className="sticky top-8">
-                            <StockCard />
+                        <div className="sticky top-28">
+                            <StockCard  selectedStack={selectedStack} onRemoveItem={handleRemoveItem} onRemoveAll={handleRemoveAll}
+                            />
                         </div>
                     </div>
                 </div>

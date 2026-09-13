@@ -3,7 +3,7 @@ import Logo from '../assets/logo-text.png';
 
 const Nav = () => {
     return (
-        <div>
+        <div className="sticky top-0 border-b border-gray-300 bg-white z-10">
             <nav className='mx-auto container px-6'>
                 <div className='flex gap-2 justify-between items-center py-4'>
                    <img src={Logo} alt='Logo'/>

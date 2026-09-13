@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroLogo from '../assets/hero.png';
+import HeroLogo from '../assets/banner-stack.png';
 
 const Hero = () => {
     return (
@@ -33,8 +33,8 @@ const Hero = () => {
                         </div>
                     </div>  
                     
-                    <div className="w-full lg:w-auto flex justify-center">
-                        <img src={HeroLogo} alt="hero" className="max-w-full h-auto" />
+                    <div className="w-full lg:w-auto flex justify-center ">
+                        <img src={HeroLogo} alt="hero" className="max-w-full  " />
                     </div>
                       
                 </div>
