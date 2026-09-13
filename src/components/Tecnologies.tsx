@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import type { ITechnology } from './SkillType';
 import SkillCard from './SkillCard';
+import StockCard from './StockCard';
 
 const TechnologiesTec = async (): Promise<ITechnology[]> => {
     const res = await fetch("/data.json");
@@ -30,10 +31,18 @@ const Tecnologies = () => {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    {allTechnologies.map((skill) => (
-                        <SkillCard key={skill.name} skill={skill} />
-                    ))}
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
+                        {allTechnologies.map((skill) => (
+                            <SkillCard key={skill.name} skill={skill} />
+                        ))}
+                    </div>
+
+                    <div className="lg:col-span-1">
+                        <div className="sticky top-8">
+                            <StockCard />
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
