@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+Project Name:
+dev-stackproject
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Title & Description:
+This is a skill-based website where developers can choose technologies and skills based on their category and build their ideal tech stack.
 
-Currently, two official plugins are available:
+Technologies Used: 
+React (Vite)
+TypeScript
+Tailwind CSS
+daisyUI
+React Icons
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Features: 
+Interactive Stack Selection: Users can select their preferred technologies from various tech cards and add them directly to the "Your Stack" pane.
+Real-time Counter & Management: Users can view the number of selected technologies in real-time, remove any individual item as needed, or clear the entire list at once.
 
-## React Compiler
+What is JSX, and why is it used in React?
+JSX is a syntax extension for JavaScript that allows you to write HTML-like code directly within JavaScript code.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+What is the difference between props and state?
+Props: Used to pass data from a parent component to a child component.
+State: Represents a component's internal data storage that can change or be updated over time.
 
-## Expanding the ESLint configuration
+What does the useState hook do, and where did you use it in this project?
+The useState hook helps store and update data or state within a component.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+What does the useEffect hook do, and why did you need it to load the JSON data?
+The useEffect hook is primarily used in React components for tasks such as fetching data or making API calls.
+It is required to load data from the local data.json file.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Why does every item in a .map() list need a unique key prop?
+The primary reason for assigning a unique `key` prop to each item in a list created using `.map()` is to enable React to identify each item individually. When an item is added, removed, or modified, React uses this `key` to easily determine exactly which item has changed; consequently, it updates only that specific item instead of re-rendering the entire list.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+What is conditional rendering? Show one place you used it (example: the empty stack message).?
+Conditional rendering refers to displaying or hiding specific components or elements in the user interface (UI) based on a condition. Standard JavaScript `if/else` statements or ternary operators (? :) are used for this purpose.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+1. Sending data from parent to child (using Props):
+When a parent component wants to send data, it passes the data much like an HTML tag attribute; in React, this is known as "props."
+2. Sending data from child to parent (using a callback function):
+A child cannot send data directly to the parent. Therefore, the parent component creates a function and passes it to the child as a prop.
 
-```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
